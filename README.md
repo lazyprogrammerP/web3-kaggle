@@ -1,34 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### What is Caddle?
 
-## Getting Started
+Caddle is a IPFS-based data aggregating tool focused towards the ML and Data Science community. It acts as a platform to explore datasets for research and model training across various fields and industries.
 
-First, run the development server:
+### What does Caddle solve?
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Large datasets is crucial for research analytics, training accurate machine learning models etc... Caddle bridges the gap between data aggregators and the data science community by providing a platform to push huge datasets to decentralized cloud and thereby enabling better accuracy for ML models, better results for research analytics and many other such applications.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### How does Caddle leverage IPFS and Filecoin?
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+IPFS' decentralized nature allows for better speeds when considered across the globe and the competetive storage rates offered by services like Web3 Storage enables Caddle to store higher volumes of data at a much cheaper rate. As for these reasons, I integrated Web3 Storage API using it's JavaScript SDK to store and retrieve files from the IPFS nodes. I made use of versioning system, similar to w3.name to version the datasets and maintain the history of edits throughout.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### What is the tech stack Caddle is built upon?
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Caddle is built using:
 
-## Learn More
+1. Next.js
+2. Tailwind CSS
+3. Firebase
+4. IPFS / Filecoin client (web3.storage)
 
-To learn more about Next.js, take a look at the following resources:
+### Links
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Source code can be found [here](https://www.github.com/lazyprogrammerP/web3-kaggle).
+- The application is live on [here](https://web3-kaggle.vercel.app).
